@@ -3,30 +3,225 @@
 <head>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sang Shop</title>
 </head>
 <body>
-     <section class="myheader">
-        <div class="container text-center">
+     <section class="myheader bg-info">
+        <div class="container py-3">
             <div class="row">
-              <div class="col bg-info">
-                Column
+              <div class="col-md-3 text-center py-3">
+                <img class="img-fluid rounded" width="70px" height="40px" src="Images/logo.jpg" alt="logo">
               </div>
-              <div class="col bg-warning">
-                Column
+              <div class="col-md-4 text-center">
+                <div class="input-group mb-3 text-center">
+                  <input type="text" class="form-control" placeholder="Từ khóa tìm kiếm " aria-label="Từ khóa tìm kiếm" aria-describedby="basic-addon2">
+                  <span class="input-group-text" id="basic-addon2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+                </div>
               </div>
-              <div class="col-6 bg-danger">
-                Column
+              <div class="col-md-3">
+                <div class="row">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="fs-3 text-danger">
+                          <i class="fa-solid fa-phone"></i>
+                        </div>
+                      </div>
+                      <div class="col-9">Tư vấn hỗ trợ <br>
+                      <strong class="text-danger">0376033147</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="fs-3 text-danger">
+                          <i class="fa-regular fa-user"></i>
+                        </div>
+                      </div>
+                      <div class="col-9">Xin chào!<br>
+                      <strong class="text-danger">Đăng nhập</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="row">
+                  <div class="col">
+                    <a href="#" class="position-relative">
+                      <span class="fs-2"><i class="fa-regular fa-heart text-muted"></i></span>
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="#" class="position-relative">
+                      <span class="fs-2"><i class="fa-solid fa-bag-shopping text-muted"></i></span>
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="#" class="position-relative">
+                      <span class="fs-2"><i class="fa-solid fa-print text-muted"></i></span>
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 0</span>    
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
      </section>
-     <section class="mymenu"></section>
+
+     <section class="mymenu bg-info">
+        <div class="container h6">
+          <div class="row">
+            <div class="col-md-3 text-white text-center py-3">Danh mục sản phẩm</div>
+            <div class="col-md-9">
+              <nav class="navbar navbar-expand-lg bg-info">
+                <div class="container-fluid">
+                  <a class="navbar-brand d-none" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="#">Trang chủ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Giới thiệu</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white">Tin tức</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white">Tuyển dụng</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white">Liên hệ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+     </section>
+
      <section class="mycontent"></section>
-     <section class="myfooter"></section>  
+     <section class="myfooter bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+               <h4>VĂN PHÒNG GIAO DỊCH</h4>
+               <ul class="list-menu">
+                <li class="li_menu"><a href="/" title="Trang chủ">Trang chủ</a></li>
+                <li class="li_menu"><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
+                <li class="li_menu"><a href="/san-pham" title="Sản phẩm">Sản phẩm</a></li>
+                <li class="li_menu"><a href="/tin-moi-nhat" title="Tin mới nhất">Tin mới nhất</a></li>
+                <li class="li_menu"><a href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a></li>
+                <li class="li_menu"><a href="/tuyen-dung" title="Tuyển dụng">Tuyển dụng</a></li>
+                <li class="li_menu"><a href="/lien-he" title="Liên hệ">Liên hệ</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>VỀ CHÚNG TÔI</h4>
+              <ul class="list-menu">
+               <li class="li_menu"><a href="/" title="Trang chủ">Trang chủ</a></li>
+               <li class="li_menu"><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
+               <li class="li_menu"><a href="/san-pham" title="Sản phẩm">Sản phẩm</a></li>
+               <li class="li_menu"><a href="/tin-moi-nhat" title="Tin mới nhất">Tin mới nhất</a></li>
+               <li class="li_menu"><a href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a></li>
+               <li class="li_menu"><a href="/tuyen-dung" title="Tuyển dụng">Tuyển dụng</a></li>
+               <li class="li_menu"><a href="/lien-he" title="Liên hệ">Liên hệ</a></li>
+              </ul>
+           </div>
+           
+           <div class="col-md-3">
+            <h4>CHÍNH SÁCH BÁN HÀNG</h4>
+            <ul class="list-menu">
+             <li class="li_menu"><a href="/" title="Trang chủ">Trang chủ</a></li>
+             <li class="li_menu"><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
+             <li class="li_menu"><a href="/san-pham" title="Sản phẩm">Sản phẩm</a></li>
+             <li class="li_menu"><a href="/tin-moi-nhat" title="Tin mới nhất">Tin mới nhất</a></li>
+             <li class="li_menu"><a href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a></li>
+             <li class="li_menu"><a href="/tuyen-dung" title="Tuyển dụng">Tuyển dụng</a></li>
+             <li class="li_menu"><a href="/lien-he" title="Liên hệ">Liên hệ</a></li>
+            </ul>
+            </div>
+
+         <div class="col-md-3">
+          <h4>THEO DÕI CHÚNG TÔI</h4>
+          <ul class="list-menu">
+           <li class="li_menu"><a href="/" title="Trang chủ">Trang chủ</a></li>
+           <li class="li_menu"><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
+           <li class="li_menu"><a href="/san-pham" title="Sản phẩm">Sản phẩm</a></li>
+           <li class="li_menu"><a href="/tin-moi-nhat" title="Tin mới nhất">Tin mới nhất</a></li>
+           <li class="li_menu"><a href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a></li>
+           <li class="li_menu"><a href="/tuyen-dung" title="Tuyển dụng">Tuyển dụng</a></li>
+           <li class="li_menu"><a href="/lien-he" title="Liên hệ">Liên hệ</a></li>
+          </ul>
+       </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>THIÊN ĐƯỜNG ĐỒ LƯU NIỆM WIN SHOP</h5>
+            <p>Địa chỉ: 180 Cao Lỗ, Phường 4, Quận 8, TP.Hồ Chí Minh</p>
+            <p>Điện thoại: 0376033147 </p>
+            <p> Email: DH52111659@student.stu.edu.vn</p>
+          </div>
+          <div class="col-md-6">
+            <h5>NHẬN TIN KHUYÊN MÃI</h5>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Nhập email của bạn" aria-describedby="basic-addon2">
+              <span class="input-group-text bg-danger text-white" id="basic-addon2">Đăng ký</span>
+            </div>
+            <div>
+              <span class="box50 border border-danger text-primary mr-3">
+                <i class="fa-brands fa-facebook"></i>
+              </span>
+              <span class="box50 border border-danger text-info mr-3">
+                <i class="fa-brands fa-twitter"></i>
+              </span>
+              <span class="box50 border border-danger mr-3">
+                <i class="fa-brands fa-google"></i>
+              </span>
+              <span class="box50 border border-danger text-danger bg-white mr-3">
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-8">
+            <p>Bản quyền thuộc về Thanh Sang IT</p>
+          </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+      </div>
+     </section>  
     <script src="script/main.js"></script>
 </body>
 </html>
