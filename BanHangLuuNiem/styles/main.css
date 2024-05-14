@@ -14,3 +14,7 @@
     color: grey;
     text-decoration: none;
 }
+.active img{
+    height: 500px;
+    width: 100%;
+}
