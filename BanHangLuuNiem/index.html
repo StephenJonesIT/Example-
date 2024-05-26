@@ -14,8 +14,8 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid bg-all mb-4" style="height: 150px;">
-            <nav class="container-fluid navbar navbar-expand-md bg-all navbar-dark fixed-top">
+        <div class="container-fluid bg-all mb-4 fixed-top">
+            <nav class="container-fluid navbar navbar-expand-md bg-all navbar-dark ">
                 <div class="container">
                   <a class="navbar-brand" href="#">WinShop</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -29,7 +29,7 @@
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Sản phẩm</a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Whisky</a></li>
+                          <li><a class="dropdown-item" href="#Wisky">Whisky</a></li>
                           <li><a class="dropdown-item" href="#">Champagne</a></li>
                           <li><a class="dropdown-item" href="#">Vodka</a></li>
                         </ul>
@@ -38,23 +38,23 @@
                         <a class="nav-link" href="#">Tin tức</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Liên hệ</a>
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Đăng kí</a>
+                        <a class="nav-link" href="register.html">Đăng kí</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Đăng nhập</a>
+                        <a class="nav-link" href="login.html">Đăng nhập</a>
                       </li>
                     </ul>
                   </div>
                 </div>
             </nav>
          
-            <div class="mt-5 p-5 text-white rounded">
+            <div class="mt-1 p-4 text-white rounded bg-all">
               <form class="form-inline form-search">
                 <div class="input-group">
-                  <input type="email" class="form-control" size="50" placeholder="Nhập tên sản phẩm ..." required>
+                  <input type="text" class="form-control" size="50" placeholder="Nhập tên sản phẩm ..." required onkeyup="searchFilter()">
                   <div class="input-group-btn btn-search">
                     <button type="button" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                   </div>
@@ -62,195 +62,78 @@
                 <div class="ml-5 d-none d-md-block">
                   <i class="fa-lg fa-solid fa-cart-shopping"></i>
                 </div>
-                
               </form>
-             
             </div>
         </div>
     </header>
-    <!--Slide show-->
-    <div class="container d-none d-md-block">
-      <div class="slideshow bg-danger p-5">
-        <div class="slide">
-          <img src="images/banner/banner_1.jpg" alt="Slide 1">
+
+          <!--Slide show-->
+          <div class="container-fluid bottom-to-top show-on-scroll d-none d-md-block" style="margin-top: 160px;">
+            <div class="slideshow bg-danger p-5">
+              <div class="slide">
+                <img src="images/banner/banner_1.jpg" alt="Slide 1">
+              </div>
+              
+              <div class="slide">
+                <img src="images/banner/banner_2.jpg" alt="Slide 2">
+              </div>
+              
+              <div class="slide">
+                <img src="images/banner/baner_4.png" alt="Slide 2">
+              </div>
+              <div class="slide">
+                <img src="images/banner/banner_5.jpg" alt="Slide 2">
+              </div>
+              <div class="slide">
+                <img src="images/banner/banner_6.jpg" alt="Slide 2">
+              </div>
+            </div>
+          </div>
+
+
+
+    <!--Form register-->
+    <div class="container register">
+      <h1>Đăng ký tài khoản</h1>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="username">Tên đăng nhập:</label>
+          <input type="text" id="username" name="username" class="form-control" required>
         </div>
-        
-        <div class="slide">
-          <img src="images/banner/banner_2.jpg" alt="Slide 2">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
         </div>
-        
-        <div class="slide">
-          <img src="images/banner/baner_4.png" alt="Slide 2">
+        <div class="form-group">
+          <label for="password">Mật khẩu:</label>
+          <input type="password" id="password" name="password" class="form-control" required>
         </div>
-      </div>
+        <div class="form-group mb-4">
+          <label for="confirmPassword">Xác nhận mật khẩu:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+        </div class="row">
+        <button type="submit" class="btn btn-primary col-12">Đăng ký</button>
+      </form>
     </div>
- 
 
     <!--List new product-->
-      <div class="container mt-5">
+      <div class="container mt-5 list-product">
         <h3 class="mb-3 mt-5">Sản phẩm nổi bật</h3>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/whiskys/whisky_meikle.jpg" alt="whisky_meikle.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Rượu Whisky Meikle Tòir The Original 5</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">1.450.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/whiskys/meikle_sherry.jpg" alt="whisky_sherry.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Rượu Whisky Meikle Tòir The Sherry 5</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">1.450.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/whiskys/meikle_chinquapin.jpg" alt="whisky_chinquapin.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Rượu Whisky Meikle Tòir The Chinquapin 5</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">1.450.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/champagnes/charles_heidsieck_brut_reserve.jpg" alt="whisky_meikle.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Rượu Champagne Charles Heidsieck Brut Réserve</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">2.105.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/champagnes/alfred _gratien.jpg" alt="champagne_alfred_gratien.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Rượu sâm panh Champagne Alfred Gratien Blanc de Blancs 2015</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">3.509.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/whiskys/Whisky_Glenallachie.jpg" alt="Whisky_Glenallachie.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Rượu Whisky Glenallachie 2010 Oloroso Puncheon Cask</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">4.500.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/champagnes/powell_son.jpg" alt="Powell & Son Barossa Valley Shiraz.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Rượu Vang Đỏ Powell & Son Barossa Valley Shiraz</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">1.056.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/champagnes/y_castellare.jpg" alt="y_castellare.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Rượu Vang Ý Castellare Di Castellina Chianti Classico Riserva</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">1.452.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
+        <div class="row" id="my-card">
        
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/vodkas/absolut_citron.jpg" alt="absolut_citron.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Vodka Absolut Citron</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">370.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/vodkas/absolut_extrakt.jpg" alt="absolut_extrakt.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Vodka Absolut Extrakt</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">550.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/vodkas/absolut_kurant.jpg" alt="absolut_kurant.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Vodka Absolut Kurant</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">390.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
-                <img src="images/vodkas/absolut_vanilia.jpg" alt="absolut_vanilia.jpg" class="image-card card-img-top w-100">
-                <div class="card-body">
-                    <h4 class="card-tile mb-3">Vodka Absolut Vanilla</h4>
-                    <div class="row">
-                        <p class="cart-text text-danger col-6">390.000 ₫</p>
-                        <a href="#" class="btn btn-all col-6">Mua ngay</a>
-                    </div>
-                </div>    
-            </div>
-          </div>
         </div>
       </div>
-      
+      <!--Footer-->
       <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                   <h4>VĂN PHÒNG GIAO DỊCH</h4>
+                   <h4>LIÊN KẾT NHANH</h4>
                    <ul class="list-menu">
-                    <li class="li_menu"><a href="/" title="Trang chủ">Trang chủ</a></li>
-                    <li class="li_menu"><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
-                    <li class="li_menu"><a href="/san-pham" title="Sản phẩm">Sản phẩm</a></li>
-                    <li class="li_menu"><a href="/tin-moi-nhat" title="Tin mới nhất">Tin mới nhất</a></li>
-                    <li class="li_menu"><a href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a></li>
-                    <li class="li_menu"><a href="/tuyen-dung" title="Tuyển dụng">Tuyển dụng</a></li>
-                    <li class="li_menu"><a href="/lien-he" title="Liên hệ">Liên hệ</a></li>
+                    <li class="li_menu"><a href="/" title="Thương hiệu">Thương hiệu</a></li>
+                    <li class="li_menu"><a href="/gioi-thieu" title="Sản phẩm mới">Sản phẩm mới</a></li>
+                    <li class="li_menu"><a href="/san-pham" title="Sản phẩm đã xem">Sản phẩm đã xem</a></li>
+                    <li class="li_menu"><a href="/tin-moi-nhat" title="So sánh sản phẩm">So sánh sản phẩm</a></li>
                    </ul>
                 </div>
                 <div class="col-md-3">
@@ -258,24 +141,20 @@
                   <ul class="list-menu">
                    <li class="li_menu"><a href="/" title="Trang chủ">Trang chủ</a></li>
                    <li class="li_menu"><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
-                   <li class="li_menu"><a href="/san-pham" title="Sản phẩm">Sản phẩm</a></li>
-                   <li class="li_menu"><a href="/tin-moi-nhat" title="Tin mới nhất">Tin mới nhất</a></li>
-                   <li class="li_menu"><a href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a></li>
-                   <li class="li_menu"><a href="/tuyen-dung" title="Tuyển dụng">Tuyển dụng</a></li>
-                   <li class="li_menu"><a href="/lien-he" title="Liên hệ">Liên hệ</a></li>
+                   <li class="li_menu"><a href="/san-pham" title="Giao hàng&Đổi trả">Giao hàng&Đổi trả</a></li>
+                   <li class="li_menu"><a href="/tin-moi-nhat" title="Bảo mật thông tin">Bảo mật thông tin</a></li>
+                   <li class="li_menu"><a href="/cau-hoi-thuong-gap" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+                   <li class="li_menu"><a href="/tuyen-dung" title="Ký gửi&trao đổi">Ký gửi&trao đổi</a></li>
                   </ul>
                </div>
                
                <div class="col-md-3">
-                <h4>CHÍNH SÁCH BÁN HÀNG</h4>
+                <h4>HIỂU VỀ RƯỢU</h4>
                 <ul class="list-menu">
-                 <li class="li_menu"><a href="/" title="Trang chủ">Trang chủ</a></li>
-                 <li class="li_menu"><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
-                 <li class="li_menu"><a href="/san-pham" title="Sản phẩm">Sản phẩm</a></li>
-                 <li class="li_menu"><a href="/tin-moi-nhat" title="Tin mới nhất">Tin mới nhất</a></li>
-                 <li class="li_menu"><a href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a></li>
-                 <li class="li_menu"><a href="/tuyen-dung" title="Tuyển dụng">Tuyển dụng</a></li>
-                 <li class="li_menu"><a href="/lien-he" title="Liên hệ">Liên hệ</a></li>
+                 <li class="li_menu"><a href="/" title="Blogs">Blogs</a></li>
+                 <li class="li_menu"><a href="/gioi-thieu" title="Hướng dẫn sử dụng">Hướng dẫn sử dụng</a></li>
+                 <li class="li_menu"><a href="/san-pham" title="Hướng dẫn bảo quản">Hướng dẫn bảo quản</a></li>
+                 <li class="li_menu"><a href="/tin-moi-nhat" title="Tin mới nhất">Phân biệt thật giả</a></li>
                 </ul>
                 </div>
     
@@ -333,5 +212,6 @@
           </div>
       </footer>
       <script src="scripts/main.js"></script>
+      <script src="scripts/jquery.js"></script>
 </body>
 </html>
